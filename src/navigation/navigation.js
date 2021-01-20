@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import { Link } from 'react-router-dom'
+import Login from '../login/login'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './navigation.css';
 
@@ -25,9 +26,7 @@ class Navigation extends Component {
                     <Navbar.Brand><Link to='/' className="link">GigHub</Link></Navbar.Brand>
                     <Nav className="mr-auto">
                     </Nav>
-                    <Nav>
-                        <Nav.Link><Link to='/login' className="link">Login</Link></Nav.Link>
-                    </Nav>
+                    <Login className="link"></Login>
                 </Navbar>
             );
         }
